@@ -1,0 +1,11 @@
+{
+  "name": "draft",
+  "owner": {"name": "Draft"},
+  "plugins": [
+    {
+      "name": "draft",
+      "source": "./plugins/draft",
+      "description": "Draft's shared context for Claude Code: Draft OS and the company brain, with a session-start note and how to use them."
+    }
+  ]
+}

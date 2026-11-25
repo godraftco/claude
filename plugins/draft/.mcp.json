@@ -1,0 +1,6 @@
+{
+  "mcpServers": {
+    "draft-os": {"type": "http", "url": "https://admin.draft.finance/mcp"},
+    "brain": {"type": "http", "url": "https://brain.draft.finance/mcp"}
+  }
+}
