@@ -1,8 +1,2 @@
+# Every change needs the owner to approve it.
 * @fergo5002
-
-# Anything that runs on a laptop, decides where it connects, or checks the rest.
-/plugins/draft/hooks/ @fergo5002
-/plugins/draft/.mcp.json @fergo5002
-/scripts/ @fergo5002
-/tests/ @fergo5002
-/.github/ @fergo5002
