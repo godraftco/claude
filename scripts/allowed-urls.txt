@@ -1,0 +1,7 @@
+# The only addresses this repository may name. scripts/check.sh refuses any other URL, and any mention of
+# draft.finance that isn't one of these.
+https://admin.draft.finance/mcp
+https://brain.draft.finance/mcp
+https://brain.draft.finance/api/v1/context
+https://brain.draft.finance/agents
+https://github.com/godraftco/claude

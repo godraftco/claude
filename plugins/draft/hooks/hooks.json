@@ -2,9 +2,30 @@
   "hooks": {
     "SessionStart": [
       {
-        "matcher": "startup|clear",
+        "matcher": "startup|clear|compact",
         "hooks": [
-          {"type": "command", "command": "cat \"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.md\"", "timeout": 5}
+          {"type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.sh\"", "timeout": 5}
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {"type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/context.sh\"", "timeout": 3}
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__plugin_draft_brain__(?!(search|context|fetch|related|connection|today|now|primer)$).+$",
+        "hooks": [
+          {"type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/confirm-write.sh\"", "timeout": 5}
+        ]
+      },
+      {
+        "matcher": "^mcp__plugin_draft_draft-os__(?!(me|schema|search|list_brands|get_brand|brand_timeline|brand_monthly|brand_forecast|bank_lines|soul_read|brand_notes|get_application|list_ucc_filings|brand_connections|brand_people|web_signals|list_reviews|get_review|list_decisions|get_decision|list_asks|list_lines|list_draws|list_collections|tasks|nodes|agents|get_run|brand_events|brand_monitoring|monitoring_signals|brand_scorecard|brand_sales|brand_fraud|brand_debt|brand_queries|brand_contracts|book_overview|market_overview|market_brands|data_schema|sql_query|lake_schema|lake_query|lake_result)$).+$",
+        "hooks": [
+          {"type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/confirm-write.sh\"", "timeout": 5}
         ]
       }
     ]
