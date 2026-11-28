@@ -36,7 +36,7 @@ To turn the per-message hook off, set `DRAFT_CONTEXT=off` in the environment Cla
 | `skills/draft-corrections` | When Claude got Draft wrong: find the record that misled it and propose a fix. |
 | `skills/draft-writing` | Draft's house style. |
 | `skills/draft-money-copy` | Before writing about money for a founder, fetch the current rules from the brain. |
-| `/draft:setup`, `/draft:today`, `/draft:prep`, `/draft:record-meeting`, `/draft:remember`, `/draft:wrong` | Commands you type. Each is a skill that only runs when you call it. |
+| `/draft:setup`, `/draft:today`, `/draft:prep`, `/draft:record-meeting`, `/draft:post-meeting`, `/draft:remember`, `/draft:wrong` | Commands you type. Each is a skill that only runs when you call it. |
 | `agents/draft-researcher.md` | An agent for long digs, so the main conversation stays small. It has the connectors' read tools and nothing else: no files, no shell. |
 
 ## How a change ships

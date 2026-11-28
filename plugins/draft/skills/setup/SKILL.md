@@ -43,4 +43,4 @@ Ask what they'd normally ask a colleague about Draft. If they want a start, offe
 - What did we last tell a partner or brand they work with, and when?
 - Who have we met at a company they name, and what was agreed?
 
-Answer each from the connectors, with record ids. End by telling them about `/draft:today`, `/draft:prep`, `/draft:record-meeting`, `/draft:remember` and `/draft:wrong`.
+Answer each from the connectors, with record ids. End by telling them about `/draft:today`, `/draft:prep`, `/draft:record-meeting`, `/draft:post-meeting` (it needs their own Wispr Flow connector too), `/draft:remember` and `/draft:wrong`.

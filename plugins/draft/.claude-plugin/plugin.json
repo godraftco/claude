@@ -1,6 +1,6 @@
 {
   "name": "draft",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Draft's shared context for Claude Code: Draft OS and the company brain, a note at the start of each session, titles that may bear on each message, and skills and commands for using and writing back to them.",
   "author": {"name": "Draft"},
   "repository": "https://github.com/godraftco/claude",
